@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int grade,
+    aCount=0,
+    bCount=0,
+    cCount=0,
+    dCount=0,
+    fCount=0;
+    
+cout<<"Enter the letter grades."<<endl
+    <<"Enter the EOF character to end input."<<endl;
+    
+while(grade=cin.get() !=EOF) {
+    if(grade="A"||"a") {
+        ++aCount;
+         break;}
+        else if(grade="B"||"b") {
+            ++bCount;
+            break;}
+            else if(grade="C"||"c"){
+                ++cCount;
+                 break;}
+                else if(grade="D"||"d"){
+                    ++dCount;
+                    break;}
+                    else if(grade="F"||"f"){
+                        ++fCount;
+                        break;}
+                        else if(grade="\n"||"\t"||" ") {
+                             break;}
+                            else {
+                                cout<<"Incorrect letter grade entered."
+                                    <<"Enter new grade."<<endl;
+                                break; }
+}
+                                
+cout<<"\n\nTotals for each letter grade are:"
+    <<"\nA:"<<aCount
+    <<"\nB:"<<bCount
+    <<"\nC:"<<cCount
+    <<"\nD:"<<dCount
+    <<"\nF:"<<fCount<<endl;
+    
+return 0; }
