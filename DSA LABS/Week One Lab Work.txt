@@ -1,0 +1,45 @@
+Question 1
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    // Char signed
+ char Char1=-128;
+ char Char2=-129;
+
+// Char Unsigned
+char Char3= 255;
+char Char4=256;
+
+// Short signed
+short short1=-32768;
+short short2=-32769;
+
+//Short Unsigned
+short short3=65535;
+short short4=65536;
+
+//Int signed
+int int1=-2147483648;
+int int2=-2147483649;
+
+//Int unsigned
+int int3=4294967295;
+int int4=4294967296;
+
+ cout<<Char1<<Char2<<Char3<<Char4<<short1<<short2<<short3<<short4<<int1<<int2<<int3<<int4;
+}
+
+Question 2
+
+The output to the code is:
+“5 10 
+2 4 6 8 10 
+ “
+This output came to be by essentially outputting the values of 2 arrays one after another.
+The arrays were output by using a function called “printarray”. This function takes an array
+and creates a counter that allows the array to output its elements one by one using a for loop
+that is stopped by the counter. 

@@ -1,0 +1,29 @@
+ PROGRAM <OddNumberAndAverageCounter>:
+ <
+ Initialize UserInput to zero;
+ Initialize  Counter to one;
+ Initialize ToatlOddNumbers;
+ Initialize Average to TotalOddNumbers/Counter;
+
+ PRINT 'Please input range';
+ INPUT UserInput;
+
+ WHILE <Counter is less than or equl to UserInput>
+	DO Counter divide by 2;
+	IF <Counter isn't divisible by 2>
+		Increase TotalOddNumbers by Counter;
+	END IF
+	Increse Counter by 1;
+ END WHILE
+	
+ PRINT TotalOddNumbers;
+ PRINT Average;
+ 
+ >
+ END.
+
+
+ 
+
+
+
